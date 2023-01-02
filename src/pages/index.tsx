@@ -14,7 +14,7 @@ export default function Home() {
   const isAnonymousRef = useRef<HTMLInputElement>(null);
 
   return (
-    <Layout title="Welcome ">
+    <Layout title="Cntrl CV ">
       <div className="w-5/6 mx-auto mt-8 flex items-center justify-between">
         <p className="tracking-wide text-primary-500 opacity-90 text-lg font-bold">Create A New Paste</p>
 

@@ -112,9 +112,16 @@ const MainEditor = ({ update, refid, data, queryData, isAnonymousRef }: EditorPr
       })
       .then((r: ApiCreatePasteResponse | ApiUpdatePasteResponse) => {
         if (r.error) {
-          console.log(r.error, 'error');
-
-          onErrorNotify(r.description);
+          // console.log(r.error, 'error');
+            console.log(r.description, 'r.description');
+          if (r.description == 'document is not unique.'){
+            onErrorNotify("Title not unique");
+          } 
+          else if (r.description == '"filename" is not allowed to be empty') {
+            onErrorNotify("Title can't be empty");
+          } else {
+            onErrorNotify(r.description);
+          }
           // reset buttons
           resetButtonRef();
         } else {

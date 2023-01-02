@@ -23,7 +23,7 @@ const createPaste = async (req: NextApiRequest, res: NextApiResponse<ApiCreatePa
     // console.log('server2');
     // get and check `post data` first
     const { rdata, ok, err } = await getPostCreateData(req);
-    console.log(rdata,"rdata");
+    // console.log(rdata,"rdata");
     
     if (!ok) {
       res.status(err.code).json(err);
@@ -62,7 +62,7 @@ const createPaste = async (req: NextApiRequest, res: NextApiResponse<ApiCreatePa
 
 const handleUser = async (req: NextApiRequest, res: NextApiResponse): Promise<{ isUser: boolean; name: string }> => {
   try {
-    console.log('server');
+    // console.log('server');
 
     const { isAnonymous } = req.query;
     if (isAnonymous === 'true') {
@@ -85,7 +85,7 @@ const handleUser = async (req: NextApiRequest, res: NextApiResponse): Promise<{ 
 
 // Getter and Validator for req.body
 const getPostCreateData = async (req: NextApiRequest): Promise<ValidateCreateProps> => {
-  console.log('server3');
+  // console.log('server3');
   const d: ApiCreatePasteBody = req.body;
 
   const r = await schemaValidate(ApiCreateBodySchema, d);
