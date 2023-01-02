@@ -1,0 +1,24 @@
+{
+  "error": false,
+  "code": 200,
+  "data": {
+    "id": "297572197717770760",
+    "paste": {
+      "createdDate": "2021-05-03T12:43:25.500Z",
+      "filename": "x.js",
+      "description": "this is a test",
+      "content": "console.log('this is a test from cypress')",
+      "isPrivate": true,
+      "willExpire": false,
+      "isCode": true,
+      "codeLanguage": "javascript",
+      "pasteId": "ubwVflmE06Qs24kvUY8YuuH5CQQ75HpLVhkwpo0puhf9xc6-kv",
+      "isOwnedByUser": true,
+      "ownedByUsername": "anonymous",
+      "user": {},
+      "updated": true,
+      "updatedDate": "2021-05-03T12:50:54.571Z"
+    },
+    "user": {}
+  }
+}

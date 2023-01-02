@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+hr {
+  @apply border-secondary-300;
+}
