@@ -1,23 +1,22 @@
 import { isNew } from '@lib/isNew';
 import { GetLatestPastesQuery, PasteQueryResponse } from '@utils/interfaces/query';
 import Link from 'next/link';
-import useSWR from 'swr';
 
 type RenderLatestPastesProps = {
   initialPastes: GetLatestPastesQuery;
 };
 
 export const RenderLatestPastes = ({ initialPastes }: RenderLatestPastesProps) => {
-  const { data: pastes, error } = useSWR<GetLatestPastesQuery>('/api/pastes/latest', { initialData: initialPastes });
-    console.log(initialPastes);
+  // const { data: pastes, error } = useSWR<GetLatestPastesQuery>('/api/pastes/latest', { initialData: initialPastes });
+    // console.log(initialPastes);
     
   if (!initialPastes) {
     return <p className="mt-6">Loading...</p>;
   }
 
-  if (error) {
-    return <p className="mt-6">There was a problem while trying to fetch the latest pastes.</p>;
-  }
+  // if (error) {
+  //   return <p className="mt-6">There was a problem while trying to fetch the latest pastes.</p>;
+  // }
 
   return (
     <ul className="mt-6">
