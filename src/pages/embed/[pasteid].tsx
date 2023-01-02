@@ -1,12 +1,10 @@
 import { GetServerSideProps } from 'next';
 
-import useSWR from 'swr';
 
-import { jsonify, joinString } from '@ootiq/blank';
+import { joinString, jsonify } from '@ootiq/blank';
 
-import { GetPasteByIdQuery } from '@utils/interfaces/query';
 import { GetPasteHandler } from '@functions/getPaste';
-import { PasteContainer } from '@components/pastes/page';
+import { GetPasteByIdQuery } from '@utils/interfaces/query';
 
 type GetPasteProps = {
   pasteid: string;
@@ -28,9 +26,9 @@ export const getServerSideProps: GetServerSideProps<GetPasteProps> = async ({ re
 
 export default function EmbedPaste({ pasteid, initialPaste }: GetPasteProps) {
   // get response
-  const { data: paste } = useSWR<GetPasteByIdQuery>(pasteid ? `/api/pastes/get/${pasteid}` : null, {
-    initialData: initialPaste
-  });
+  // const { data: paste } = useSWR<GetPasteByIdQuery>(pasteid ? `/api/pastes/get/${pasteid}` : null, {
+  //   initialData: initialPaste
+  // });
 
-  return <PasteContainer paste={paste} />;
+  // return <PasteContainer paste={paste} />;
 }
