@@ -1,6 +1,5 @@
 import { GetServerSideProps } from 'next';
 
-import useSWR from 'swr';
 
 import { joinString, jsonify } from '@ootiq/blank';
 
@@ -32,9 +31,9 @@ export const getServerSideProps: GetServerSideProps<ViewPasteProps> = async ({ r
 
 export default function ViewPaste({ pasteid, initialPaste }: ViewPasteProps) {
   // get response
-  const { data:paste,error } = useSWR<GetPasteByIdQuery>(pasteid ? `/api/pastes/get/${pasteid}` : null, {
-    initialData: initialPaste
-  });
+  // const { data:paste,error } = useSWR<GetPasteByIdQuery>(pasteid ? `/api/pastes/get/${pasteid}` : null, {
+  //   initialData: initialPaste
+  // });
   // console.log(initialPaste, 'data');
   
 // const { data: paste } = useSWR<GetPasteByIdQuery>(pasteid ? `/api/pastes/get/${pasteid}` : null, {
