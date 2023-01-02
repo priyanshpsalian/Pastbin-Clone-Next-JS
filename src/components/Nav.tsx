@@ -12,7 +12,7 @@ const Navigation = () => {
         <Link href="/">
           <a title="Return Home">
             <h1 className="text-2xl font-black tracking-wide text-secondary-700">
-              Cntrl<span className="text-primary-500">CV</span>
+              Paste<span className="text-primary-500">It</span>
             </h1>
             <p className="text-sm text-secondary-400 tracking-wide">Ultimate text sharing app</p>
           </a>
