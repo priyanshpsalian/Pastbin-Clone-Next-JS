@@ -16,8 +16,8 @@ const editor = ({ codeEditor, content, codeLanguage }: MonacoEditorProps) => {
     monaco.editor.defineTheme('lcl-theme', {
       base: 'vs',
       inherit: true,
-      token: 'string' ,
-      rules: [{ foreground: '#52525b' }],
+      // token: 'string',
+      rules: [{ foreground: '#52525b', token: 'comment' }],
       colors: {
         'editor.foreground': '#52525b',
         'editorLineNumber.foreground': '#d4d4d8',
