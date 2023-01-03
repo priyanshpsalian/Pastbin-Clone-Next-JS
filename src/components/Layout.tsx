@@ -91,7 +91,7 @@ export default function Layout({ children, title }: LayoutProps) {
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8874572815436250"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       />
     </>
   );
