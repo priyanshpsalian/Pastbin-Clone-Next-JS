@@ -22,15 +22,18 @@ export default function Layout({ children, title }: LayoutProps) {
           href="logo.png"
         ></link>
       </Head> */}
+
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2ZMR9QH33" />
-      <script dangerouslySetInnerHTML={{ __html:
-        `window.dataLayer = window.dataLayer || [];
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-W2ZMR9QH33');`}}
-        
+        gtag('config', 'G-W2ZMR9QH33');`
+        }}
       />
+
       <NextSeo
         title="Paste It | Paste Code"
         description="Ultimate text sharing app.Paste It and share text over the internet by using a custom URL.The fastest way to paste text and share with other people.Just like a online clipboard.Paste code now"
@@ -70,8 +73,7 @@ export default function Layout({ children, title }: LayoutProps) {
               type: 'image/jpeg'
             },
 
-            { url: 'https://pasteitnow.vercel.app/' },
-            
+            { url: 'https://pasteitnow.vercel.app/' }
           ],
           siteName: 'Paste It | Paste Code'
         }}
@@ -86,6 +88,11 @@ export default function Layout({ children, title }: LayoutProps) {
         <hr />
         <Footer />
       </main>
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8874572815436250"
+        crossorigin="anonymous"
+      />
     </>
   );
 }
