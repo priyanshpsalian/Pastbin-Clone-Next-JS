@@ -93,6 +93,20 @@ export default function Layout({ children, title }: LayoutProps) {
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8874572815436250"
         crossOrigin="anonymous"
       />
+      <ins
+        className="adsbygoogle"
+        // style.display="block"
+        style={{display:"block"}}
+        data-ad-client="ca-pub-8874572815436250"
+        data-ad-slot="9639146322"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(adsbygoogle = window.adsbygoogle || []).push({});`
+        }}
+      />
     </>
   );
 }
