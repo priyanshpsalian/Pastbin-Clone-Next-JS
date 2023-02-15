@@ -89,4 +89,4 @@ NEXT_PUBLIC_APP_URL=
 
 ##
 
-### &copy; TheBoringDude | 2021
+### &copy; Priyansh Salian | 2023
