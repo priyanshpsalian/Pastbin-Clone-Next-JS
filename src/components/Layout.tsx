@@ -40,7 +40,7 @@ export default function Layout({ children, title }: LayoutProps) {
         additionalLinkTags={[
           {
             rel: 'icon',
-            href: 'logo.png'
+            href: 'logo.png' 
           }
         ]}
         additionalMetaTags={[
@@ -96,7 +96,7 @@ export default function Layout({ children, title }: LayoutProps) {
       <ins
         className="adsbygoogle"
         // style.display="block"
-        style={{display:"block"}}
+        style={{display :"block"}}
         data-ad-client="ca-pub-8874572815436250"
         data-ad-slot="9639146322"
         data-ad-format="auto"
