@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <Layout title="Paste It ">
-      <meta name="google-site-verification" content="jZ4SiB6P9CcWUG0AexJ8ko67-4L3gavw9s2EpzsPi9U" />
+      
       <div className="w-5/6 mx-auto mt-8 flex items-center justify-between">
         <p className="tracking-wide text-primary-500 opacity-90 text-lg font-bold">Create A New Paste</p>
 

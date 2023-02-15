@@ -23,7 +23,7 @@ export default function Layout({ children, title }: LayoutProps) {
         ></link>
       </Head> */}
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2ZMR9QH33" />
+      {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2ZMR9QH33" />
       <script
         dangerouslySetInnerHTML={{
           __html: `window.dataLayer = window.dataLayer || [];
@@ -32,7 +32,7 @@ export default function Layout({ children, title }: LayoutProps) {
 
         gtag('config', 'G-W2ZMR9QH33');`
         }}
-      />
+      /> */}
 
       <NextSeo
         title="Paste It | Paste Code"
