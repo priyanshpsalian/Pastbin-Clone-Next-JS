@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>lcl-paste</h1>
+    <h1>Paste It</h1>
     <p>Simple Paste [Bin] Manager App</p>
 </div>
 
